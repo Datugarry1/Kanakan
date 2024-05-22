@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <div class="headmo">
+    <div class="container">
+        <nav>
+    <div class="logo"><b>DGSK</b></div>
+   <ul>
+      <li> <a href="#head">Home</a> </li>
+      <li> <a href="#about">About</a> </li>
+      <li> <a href="#services">Services</a> </li>
+      <li> <a href="#contact">Contact</a> </li>
+    </ul>
+    </nav>
+   </div>
+   </div>
+   </div>
+   <div id="head">
+   <div class="cont1">
+       <p class="name">My website
+       <h2>Hi, I'm <span>KANAKAN</span><br>From Poblacion</h2></p>
+       <img src="/storage/emulated/0/DCIM/100PINT/Pins/Untitled10_20240426151059.png" class="img1">
+   </div>
+   </div>
+   <!----------About---------->
+  <div id="about">
+      <div class="cont2">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="/storage/emulated/0/Pictures/1662692981957.jpg">
+              </div>
+              <div class="about-col-2">
+                  <h2 class="sub-title">About Me</h2>
+                  <p class="message">Hello, I am Datu Garry S. Kanakan and i am BSIT-2 student and i am studying 
+Web Development, Software Development, System Development and currently i am
+studying at Gani L. Abpi College Incorporated.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!----------------------Services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+          <div class="service-list">
+              <div>
+                  <h2>Web Design</h2>
+                  <p> i am trying hard now</p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div>
+                  <h2>Game Design</h2>
+                  <p> i am trying hard now</p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div>
+                  <h2>Apps Design</h2>
+                  <p> i am trying hard now</p>
+                  <a href="#">Learn more</a>
+            </div>
+            <a href="#testimony" class="b">More</a>
+       </div>
+    </div>
+</div>
+  <!------------Testimony--------------->
+   <div id="testimony">
+    <div class="container">
+        <h1 class="sub">Testimony</h1>
+          <div class="sub">
+              <div>
+                  <h3>Play With Me</h3>
+                  <a href="/storage/785D-0FE3/Video/received_1809331502754314.mp4"><img src="/storage/785D-0FE3/Pictures/FB_IMG_16110363134720213.jpg"></a>
+              </div>
+              <div>
+                  <h3>Touch Me</h3>
+                  <a href="/storage/785D-0FE3/Video/received_3674084956035770.mp4"> <img src="/storage/785D-0FE3/Pictures/FB_IMG_16110363134720213.jpg"></a>
+              </div>
+              <div>
+                  <h3>Click Me</h3>
+                  <a href="/storage/785D-0FE3/Video/received_926931845393093.mp4"><img src="/storage/785D-0FE3/Pictures/FB_IMG_16110363134720213.jpg"></a>
+            </div>
+       </div>
+    </div>
+</div>
+
+  <!-------------Contact---------------->
+    <div class="C">
+     <div id="contact">
+      <h1 class="contact">Contact <span class="me">Me</span></h1>
+      <div class="e">Email:<b>kanakandatugarry@gmail.com</b></div>
+      <div class="fb">Fb account:<b>Datu Garry S. Kanakan</b></div>
+      <div class="number">Contact number:<b>09203521367</b></div>
+  </div>
+  </div>
+    <div class="copyright">
+        <p>Copyright ©️ KANAKAN. Made in Glaci :-)
+    </div>
+</body>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family:'Poppens','sans-serif';
+        }
+    body{
+        background: black;
+        color:white;
+        }
+        html{
+            scroll-behavior:smooth;
+        }
+        .headmo{
+            width:100%;
+            background:skyblue;
+            position:fixed;
+            top:-10px;
+        }
+        .logo::first-letter{
+            color:#ff15e7;
+            font-size:20px;
+        }
+        .container {
+              padding: 10px 10%;
+        }
+        nav{
+            display:flex;        
+            align-items:center;
+            justify-content:space-between;
+            flex-wrap:wrap;
+        }
+        nav ul li{
+            display:inline-block;
+            list-style:none;
+            margin:10px 20px;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            position:relative;
+        }
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background:#ff15e7;
+            position: absolute;
+            left:0;
+            bottom:-6px;
+            transition:1s;
+        }
+        nav ul li a:hover::after{
+            width:100%;
+        }    
+        .name {
+            margin-left: 90px;
+            margin-top: 90px;            
+            font-size:35px;
+        }
+        .cont1{
+            animation: in1 1.5s;
+        }
+        @keyframes in1{
+            from{
+                margin-left:600px;
+            }
+        }
+        span{
+            color:#ff15e7;
+        }
+        h2 span{
+            font-size:40px;
+        }
+        h2{
+            margin-left:90px;
+        }
+        .img1 {
+            width: 300px;
+            margin-left:600px;
+            margin-top:-180px;
+        }
+        .sub{
+            font-size:55px;     
+            }
+        }
+        /* ----------About---------- */
+        #about{
+            padding:50px 0;        
+        }
+        .cont2{
+            margin-top:55px;
+        }
+        .row{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .about-col-1{
+            flex-basis:35%;
+        }
+        .about-col-1 img{
+            width:300px;
+            border-radius:15px;
+            margin:5px 15px;
+        }
+        .about-col-2{
+            flex-basis:60%;
+          }
+            
+        .sub-title{
+            margin-top:10px;
+            font-size:50px;
+            font-weight:600;
+            color:white;
+        }
+        .message{
+            font-size:40px;        
+            margin-right:35px;
+        }
+        
+        /*---------------services---------------*/
+     #services{
+            padding:30px 0;
+        }
+        .service-list{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px));
+            grid-gap:40px;        
+            margin-top:50px;
+        }
+        .service-list div{
+            background:#262626;
+            padding:40px;
+            font-size:13px;
+            font-weight:300;
+            border-radius:10px;
+            transition: background 0.5s, transform 0.5s;        
+        }
+        .service-list div h2{
+            font-size:50px;
+            font-weigth:500;
+            text-align:center;            
+            margin-bottom:30px;
+        }
+        .service-list div a{
+            text-decoration:none;
+            color:white;
+            font-size:12px;
+            margin-top:20px;
+            display: inline-block;
+        }
+        .service-list div:hover{
+            background:blue;
+            transform:translateY(-10px);
+        }    
+        .b{
+            text-decoration:none;
+            color:white;
+            border:2px solid blue;
+            text-align:center;
+            padding:30px 0;
+        }
+        /*---------------Testimony---------------*/
+     #testimony{
+            padding:30px 0;
+        }
+        .sub{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px));
+            grid-gap:40px;        
+            margin-top:50px;
+        }
+        .sub div{
+            background:#262626;
+            padding:40px;
+            font-size:13px;
+            font-weight:300;
+            border-radius:10px;
+            transition: background 0.5s, transform 0.5s;        
+        }
+        .sub div h3{
+            font-size:90px;
+            font-weigth:500;
+            text-align:center;            
+            margin-bottom:30px;
+        }
+        .sub div a{
+            text-decoration:none;
+            color:white;
+            font-size:12px;
+            margin-top:20px;
+            display: inline-block;
+        }
+        .sub div:hover{
+            background:skyblue;
+            transform:translateY(-10px);
+        }    
+        img{
+            border-radius:25px;
+            }
+        }
+        
+      /*------------Contact---------*/
+    #contact{
+         padding:30px 0;
+     }
+     h2{
+         font-size:50px;
+         font-weigth:600;
+     }
+     span{
+         color:blue;
+     }
+     .C{
+         text-align: center;
+     }
+       /*---------------footer--------------*/   
+        .copyright{
+         width:100%;
+         text-align:center;
+         padding:25px 0;
+         background:#262626;
+         font-weight:300;
+         margin-top:20px;
+     }
